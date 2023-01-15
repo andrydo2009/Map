@@ -84,27 +84,52 @@ public class Main {
         Mechanic mechanic4 = new Mechanic ( "Andrew" , "Andreev" , "MegaAvto" , VehicleRepairSpecification.SPECIFICATION_UNIVERSAL );
         Mechanic mechanic5 = new Mechanic ( "Petr" , "Petrov" , "MegaCar" , VehicleRepairSpecification.SPECIFICATION_CAR );
 
+
+
         HashMap<Transport, Mechanic> racing = new HashMap<> ();
-        racing.put ( car6 , mechanic1 );
+        racing.put ( car6 , mechanic1);
         racing.put ( truck5 , mechanic2 );
-        racing.put ( bus6 , mechanic3 );
-        racing.put ( car7 , mechanic4 );
-        racing.put ( car8 , mechanic1 );
-        racing.put ( car5 , mechanic5 );
+        racing.put ( truck5 , mechanic2 );
+        racing.put ( bus6 , mechanic3);
+        racing.put ( car7 , mechanic1 );
+        racing.put ( car8 , mechanic1);
+        racing.put ( car5,mechanic5 );
+        checkDuplicateMap ( racing );
 
 
+        racing.put ( car6 , mechanic1);
+        racing.put ( truck5 , mechanic2 );
+        racing.put ( truck5 , mechanic2 );
+        racing.put ( bus6 , mechanic3);
+        racing.put ( car7 , mechanic1 );
+        racing.put ( car8 , mechanic1);
+        racing.put ( car5,mechanic5 );
+
+
+        System.out.println ("Проверяем дублирование вывода!");
+        System.out.println ("******************************");
         checkDuplicateMap ( racing );
-        System.out.println ( "Проверяем дублирование вывода!" );
-        System.out.println ( "******************************" );
-        checkDuplicateMap ( racing );
+
+
+
+
+
+
+
 
     }
 
-    public static void checkDuplicateMap(HashMap<Transport, Mechanic> raceTeam) {
+    public static void checkDuplicateMap(HashMap<Transport,Mechanic> raceTeam) {
 
-        for (Map.Entry entry : raceTeam.entrySet ()) {
-            System.out.println ( entry.getKey () + " этот болит обслуживает механик - " + entry.getValue () );
+
+        for (Map.Entry<Transport, Mechanic> entry: raceTeam.entrySet()) {
+
+            System.out.println(entry.getKey ()+" этот болит обслуживает механик - " + entry.getValue () );
+
         }
+
+
+
     }
 
 
