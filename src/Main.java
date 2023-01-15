@@ -95,7 +95,6 @@ public class Main {
         racing.put ( car5 , mechanic5 );
         checkDuplicateMap ( racing );
 
-
         racing.put ( car6 , mechanic1 );
         racing.put ( truck5 , mechanic2 );
         racing.put ( truck5 , mechanic2 );
@@ -103,7 +102,6 @@ public class Main {
         racing.put ( car7 , mechanic1 );
         racing.put ( car8 , mechanic1 );
         racing.put ( car5 , mechanic5 );
-
 
         System.out.println ( "Проверяем дублирование вывода!" );
         System.out.println ( "******************************" );
