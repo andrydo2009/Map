@@ -1,6 +1,8 @@
 package AllTransport;
 
 public enum BodyType {
+
+
     SEDAN ( "Седан" ),
     HATCHBACK ( "Хэтчбек" ),
     COUPE ( "Купе" ),

@@ -1,5 +1,4 @@
 package AllTransport;
-
 public class CantDiagnosisException extends Exception {
     public final Transport transport;
 

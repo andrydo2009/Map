@@ -5,6 +5,7 @@ import AllDrivers.TruckDriver;
 import AllMechanics.Mechanic;
 import AllMechanics.VehicleRepairSpecification;
 import AllTransport.*;
+
 import java.util.*;
 
 
@@ -42,7 +43,6 @@ public class Main {
         CarDriver<Car> Ivan = new CarDriver<> ( "Ivan Ivanovich Ivanov" , "B" , 5 );
         BusDriver<Bus> Oleg = new BusDriver<> ( "Oleg Petrovich Petrov" , "D" , 10 );
         TruckDriver<Truck> Semen = new TruckDriver<> ( "Semen Semenovich Semenov" , "C" , 20 );
-
 
 
 //        Ivan.goDrive ( car1 );
@@ -85,45 +85,27 @@ public class Main {
         Mechanic mechanic5 = new Mechanic ( "Petr" , "Petrov" , "MegaCar" , VehicleRepairSpecification.SPECIFICATION_CAR );
 
         HashMap<Transport, Mechanic> racing = new HashMap<> ();
-        racing.put ( car6 , mechanic1);
+        racing.put ( car6 , mechanic1 );
         racing.put ( truck5 , mechanic2 );
-        racing.put ( bus6 , mechanic3);
+        racing.put ( bus6 , mechanic3 );
         racing.put ( car7 , mechanic4 );
-        racing.put ( car8 , mechanic1);
-        racing.put ( car5,mechanic5 );
-
-
+        racing.put ( car8 , mechanic1 );
+        racing.put ( car5 , mechanic5 );
 
 
         checkDuplicateMap ( racing );
-        System.out.println ("Проверяем дублирование вывода!");
-        System.out.println ("******************************");
+        System.out.println ( "Проверяем дублирование вывода!" );
+        System.out.println ( "******************************" );
         checkDuplicateMap ( racing );
-
-
-
-
-
-
-
 
     }
 
-    public static void checkDuplicateMap(HashMap<Transport,Mechanic> raceTeam) {
+    public static void checkDuplicateMap(HashMap<Transport, Mechanic> raceTeam) {
 
-
-        for (Map.Entry entry: raceTeam.entrySet()) {
-
-            System.out.println(entry.getKey ()+" этот болит обслуживает механик - " + entry.getValue () );
-
+        for (Map.Entry entry : raceTeam.entrySet ()) {
+            System.out.println ( entry.getKey () + " этот болит обслуживает механик - " + entry.getValue () );
         }
-
-
-
     }
-
-
-
 
 
 }

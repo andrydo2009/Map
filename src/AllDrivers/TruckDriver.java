@@ -30,7 +30,6 @@ public class TruckDriver<C extends Transport & Contest> extends Driver {
         System.out.println ( "Водитель " + getFullNameDriver () + " заправляется" );
     }
 
-
 }
 
 

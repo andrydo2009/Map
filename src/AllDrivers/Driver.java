@@ -71,6 +71,5 @@ public abstract class Driver {
                 ", стаж вождения " + getExperienceDriver ();
     }
 
-
 }
 
