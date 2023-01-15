@@ -85,49 +85,41 @@ public class Main {
         Mechanic mechanic5 = new Mechanic ( "Petr" , "Petrov" , "MegaCar" , VehicleRepairSpecification.SPECIFICATION_CAR );
 
 
-
         HashMap<Transport, Mechanic> racing = new HashMap<> ();
-        racing.put ( car6 , mechanic1);
+        racing.put ( car6 , mechanic1 );
         racing.put ( truck5 , mechanic2 );
         racing.put ( truck5 , mechanic2 );
-        racing.put ( bus6 , mechanic3);
+        racing.put ( bus6 , mechanic3 );
         racing.put ( car7 , mechanic1 );
-        racing.put ( car8 , mechanic1);
-        racing.put ( car5,mechanic5 );
+        racing.put ( car8 , mechanic1 );
+        racing.put ( car5 , mechanic5 );
         checkDuplicateMap ( racing );
 
 
-        racing.put ( car6 , mechanic1);
+        racing.put ( car6 , mechanic1 );
         racing.put ( truck5 , mechanic2 );
         racing.put ( truck5 , mechanic2 );
-        racing.put ( bus6 , mechanic3);
+        racing.put ( bus6 , mechanic3 );
         racing.put ( car7 , mechanic1 );
-        racing.put ( car8 , mechanic1);
-        racing.put ( car5,mechanic5 );
+        racing.put ( car8 , mechanic1 );
+        racing.put ( car5 , mechanic5 );
 
 
-        System.out.println ("Проверяем дублирование вывода!");
-        System.out.println ("******************************");
+        System.out.println ( "Проверяем дублирование вывода!" );
+        System.out.println ( "******************************" );
         checkDuplicateMap ( racing );
-
-
-
-
-
-
 
 
     }
 
-    public static void checkDuplicateMap(HashMap<Transport,Mechanic> raceTeam) {
+    public static void checkDuplicateMap(HashMap<Transport, Mechanic> raceTeam) {
 
 
-        for (Map.Entry<Transport, Mechanic> entry: raceTeam.entrySet()) {
+        for (Map.Entry<Transport, Mechanic> entry : raceTeam.entrySet ()) {
 
-            System.out.println(entry.getKey ()+" этот болит обслуживает механик - " + entry.getValue () );
+            System.out.println ( entry.getKey () + " этот болит обслуживает механик - " + entry.getValue () );
 
         }
-
 
 
     }
