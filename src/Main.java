@@ -100,6 +100,7 @@ public class Main {
         racing.put ( truck5 , mechanic2 );
         racing.put ( bus6 , mechanic3 );
         racing.put ( car7 , mechanic1 );
+        racing.put ( car7 , mechanic1 );
         racing.put ( car8 , mechanic1 );
         racing.put ( car5 , mechanic5 );
 
