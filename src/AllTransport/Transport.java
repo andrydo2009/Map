@@ -9,7 +9,6 @@ public abstract class Transport {
     final double engineVolume;
 
 
-
     public abstract void printType();
 
     public Transport(String brand , String model , double engineVolume) {
@@ -34,14 +33,13 @@ public abstract class Transport {
     }
 
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass () != o.getClass ()) return false;
         Transport transport = (Transport) o;
-        return Objects.equals ( engineVolume,transport.engineVolume  )  && Objects.equals ( brand,transport.brand )
-                && Objects.equals ( model,transport.model );
+        return Objects.equals ( engineVolume , transport.engineVolume ) && Objects.equals ( brand , transport.brand )
+                && Objects.equals ( model , transport.model );
 
     }
 
@@ -71,8 +69,6 @@ public abstract class Transport {
     public abstract String toString();
 
     public abstract void getDiagnosisTransport() throws CantDiagnosisException;
-
-
 
 
 }

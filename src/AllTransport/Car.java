@@ -1,8 +1,6 @@
 package AllTransport;
 
 
-
-
 public class Car extends Transport implements Contest {
 
     private final BodyType bodyType;
@@ -74,8 +72,6 @@ public class Car extends Transport implements Contest {
     public void getDiagnosisTransport() {
         System.out.println ( "Проводим диагностику автомобиля " + getBrand () + " " + getModel () );
     }
-
-
 
 }
 

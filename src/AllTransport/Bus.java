@@ -1,6 +1,5 @@
 package AllTransport;
 
-
 public class Bus extends Transport implements Contest {
     private final Seats seats;
 
@@ -8,7 +7,6 @@ public class Bus extends Transport implements Contest {
         super ( brand , model , engineVolume );
         this.seats = seats;
     }
-
 
 
     @Override
@@ -70,7 +68,6 @@ public class Bus extends Transport implements Contest {
     public void getDiagnosisTransport() {
         System.out.println ( "Автобусы не проходят диагностику" );
     }
-
 
 
 }

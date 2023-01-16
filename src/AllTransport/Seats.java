@@ -16,7 +16,6 @@ public enum Seats {
         this.maximalSeats = maximalSeats;
     }
 
-
     public Integer getMinimalSeats() {
         return minimalSeats;
     }
