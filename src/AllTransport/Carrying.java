@@ -1,7 +1,6 @@
 package AllTransport;
 
 public enum Carrying {
-
     N1 ( 0 , 3.5F ), N2 ( 3.5F , 12F ), N3 ( 12F , null );
 
     private final float minimalCapacity;

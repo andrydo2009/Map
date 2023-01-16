@@ -1,5 +1,7 @@
 package AllMechanics;
 
+
+
 public enum VehicleRepairSpecification {
 
     SPECIFICATION_CAR ( "РЕМОНТ ЛЕГКОВОГО ТРАНСПОРТА" ),

@@ -2,7 +2,6 @@
 package AllTransport;
 
 
-
 public class Truck extends Transport implements Contest {
 
 

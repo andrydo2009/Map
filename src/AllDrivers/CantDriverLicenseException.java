@@ -1,5 +1,4 @@
 package AllDrivers;
-
 public class CantDriverLicenseException extends Exception {
 
 
